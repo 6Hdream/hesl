@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "鸿蒙";
+  src: url("fonts/HarmonyOS_Sans_Regular.ttf") format("ttf");
+}
+body {
+  background-color: #1a1b36;
+  color: white;
+  min-height: 100vh;
+  margin-top: 3rem;
+  overflow-x: hidden;
+  font-family: "鸿蒙";
+}
+.img-fluid {
+  border-radius: 8px;
+}
+.imgd {
+  height: 225.95px;
+}
+.card {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: #1a1b36;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* 统计数字样式 */
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.stats-number {
+  color: #3b82f6;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* 书籍轮播样式 */
+.books-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.books-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.book-item {
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.book-item img {
+  height: 180px;
+  width: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.book-item:hover {
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+.book-item:hover img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.books-track:hover {
+  animation-play-state: paused;
+}
+
+/* 底部样式 */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  color: #919191;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .book-item img {
+    height: 140px;
+  }
+  .stats-number {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-item img {
+    height: 120px;
+  }
+  .book-item {
+    padding: 0 6px;
+  }
+  .stats-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* 小火箭样式 */
+.rocket {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.rocket img {
+  width: 30px;
+  height: 30px;
+}
+
+.rocket:hover {
+  background-color: #3b82f6;
+}
+
+.rocket.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 音乐控制按钮样式 */
+.music-control {
+  margin-right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #919191;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.music-control:hover {
+  color: #3b82f6;
+}
+
+.music-control i {
+  margin-right: 8px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.music-control.playing i {
+  animation: rotate 3s linear infinite;
+}
