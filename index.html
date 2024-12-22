@@ -11,95 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <style>
-      .flower {
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-        animation: fall 3s linear forwards;
-      }
-
-      @keyframes fall {
-        0% {
-          transform: translateY(0) rotate(0deg);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(100vh) rotate(360deg);
-          opacity: 0;
-        }
-      }
-
-      /* 个人历程部分样式 */
-      .journey-section {
-        padding: 80px 0;
-        background-color: #1a1b36;
-      }
-      
-      .journey-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 100px;
-      }
-      
-      .journey-item:last-child {
-        margin-bottom: 0;
-      }
-      
-      .journey-image {
-        flex: 0 0 45%;
-        padding: 20px;
-      }
-      
-      .journey-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-      }
-      
-      .journey-image img:hover {
-        transform: scale(1.05);
-      }
-      
-      .journey-content {
-        flex: 0 0 55%;
-        padding: 30px;
-      }
-      
-      .journey-title {
-        font-size: 2rem;
-        color: #3B82F6;
-        margin-bottom: 20px;
-      }
-      
-      .journey-text {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #e0e0e0;
-      }
-
-      .journey-item.reverse {
-        flex-direction: row-reverse;
-      }
-
-      @media (max-width: 768px) {
-        .journey-item {
-          flex-direction: column;
-          margin-bottom: 50px;
-        }
-        
-        .journey-item.reverse {
-          flex-direction: column;
-        }
-        
-        .journey-image, .journey-content {
-          flex: 0 0 100%;
-          padding: 15px;
-        }
-      }
-    </style>
   </head>
   <body>
     <audio id="bgMusic" loop>
@@ -113,25 +24,43 @@
             <i class="fas fa-music"></i>
           </div>
           <img
-            src="images/touxiang.jpg" 
+            src="images/touxiang.jpg"
             alt="头像"
             class="rounded-circle avter"
             style="width: 54px; height: 54px"
             data-bs-toggle="modal"
             data-bs-target="#easterEggModal"
           />
-          
-          <div class="modal fade" id="easterEggModal" tabindex="-1" aria-labelledby="easterEggModalLabel" aria-hidden="true">
+
+          <div
+            class="modal fade"
+            id="easterEggModal"
+            tabindex="-1"
+            aria-labelledby="easterEggModalLabel"
+            aria-hidden="true"
+          >
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title text-black" id="easterEggModalLabel">彩蛋弹窗🎉</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
                 </div>
-                <div class="modal-body text-black fs-5" >
+                <div class="modal-body text-black fs-5">
                   <p class="text-center">恭喜你找到了彩蛋, 一份大礼送上</p>
-                  <p class="text-center"><a href="https://xi2tg2wnc6g.feishu.cn/docx/PkdIdQpGHolEUMxDnI8cvCk0nSh?from=from_copylink" class="text-decoration-none" target="_blank">礼物（价值299元）</a></p>
-                <p class="text-end mx-3">—Zero(零)</p>
+                  <p class="text-center">
+                    <a
+                      href="https://xi2tg2wnc6g.feishu.cn/docx/PkdIdQpGHolEUMxDnI8cvCk0nSh?from=from_copylink"
+                      class="text-decoration-none"
+                      target="_blank"
+                      >礼物（价值299元）</a
+                    >
+                  </p>
+                  <p class="text-end mx-3">—Zero(零)</p>
                 </div>
               </div>
             </div>
@@ -159,8 +88,7 @@
             </div>
             <div class="card-body text-center">
               <h3 class="card-title fs-5">虎哥解析网</h3>
-              <p class="card-text">获得了300+ 的用户和收藏<br>设计稿做了三版，产品迭代了3次</p>
-            
+              <p class="card-text">获得了300+ 的用户和收藏<br />设计稿做了三版，产品迭代了3次</p>
             </div>
           </div>
         </div>
@@ -168,14 +96,17 @@
           <div class="card card-2 rounded-4 p-3">
             <div class="d-flex align-items-center justify-content-center">
               <a
-                href="https://microsoftedge.microsoft.com/addons/detail/%E8%AE%B0%E5%BD%95%E5%8D%A1%E7%89%87/lkmjicbehibjbcggaehncjefnmacpepg"target="_blank"
+                href="https://microsoftedge.microsoft.com/addons/detail/%E8%AE%B0%E5%BD%95%E5%8D%A1%E7%89%87/lkmjicbehibjbcggaehncjefnmacpepg"
+                target="_blank"
               >
                 <img src="images/feng2.png" alt="记录卡片" class="img-fluid imgd"
               /></a>
             </div>
             <div class="card-body text-center">
               <h3 class="card-title fs-5">记录卡片</h3>
-              <p class="card-text">模仿同类产品做的，获得了89+安装量<br>设计稿做了4版,产品迭代了2次</p>
+              <p class="card-text">
+                模仿同类产品做的，获得了89+安装量<br />设计稿做了4版,产品迭代了2次
+              </p>
             </div>
           </div>
         </div>
@@ -183,11 +114,17 @@
         <div class="col-md-4">
           <div class="card card-3 rounded-4 p-3">
             <div class="d-flex align-items-center justify-content-center">
-              <a href="https://xi2tg2wnc6g.feishu.cn/docx/Ch9ydU2j0o4Ryuxyg7McocN3njH?from=from_copylink" target="_blank"><img src="images/feng3.png" alt="付费文章" class="img-fluid imgd" /></a>
+              <a
+                href="https://xi2tg2wnc6g.feishu.cn/docx/Ch9ydU2j0o4Ryuxyg7McocN3njH?from=from_copylink"
+                target="_blank"
+                ><img src="images/feng3.png" alt="付费文章" class="img-fluid imgd"
+              /></a>
             </div>
             <div class="card-body text-center">
               <h3 class="card-title fs-5">付费文章（字数1w+）</h3>
-              <p class="card-text">收获400人的访问+2个付费用户认可<br>耗时8640分钟（零散时间写的）</p>
+              <p class="card-text">
+                收获400人的访问+2个付费用户认可<br />耗时8640分钟（零散时间写的）
+              </p>
             </div>
           </div>
         </div>
@@ -212,77 +149,74 @@
         </svg>
       </div>
     </div>
-<!-- 补充第二屏 -->
-   <!-- 个人历程 -->
-   <div class="journey-section">
-    <div class="container">
-       <!-- 第二段：左文右图 -->
-       <div class="journey-item reverse">
-        <div class="journey-image">
-          <img src="images/feng1.png" alt="成长">
-        </div>
-        <div class="journey-content">
-          <h3 class="journey-title">开始写博客</h3>
-          <p class="journey-text">
-          4月中旬，我创建了一个博客账号，开始写博客，收获100+粉丝，阅读量达到2.08w,
-          5月份因为琐事就没在继续写了。
-          </p>
-        </div>
-      </div>
-      <!-- 第一段：左图右文 -->
-      <div class="journey-item">
-        <div class="journey-image">
-          <img src="images/feng3.png" alt="起点">
-        </div>
-        <div class="journey-content">
-          <h3 class="journey-title">起名zero</h3>
-          <p class="journey-text">
-            6月，我给自己起名Zero，最开始起名给公众号，万事开头难,数学上一切函数图像都从原点出发，
-            计算机的二进制以0和1构建整个数字世界，为此起名Zero，象征着从零开始的勇气和决心。
-          </p>
-        </div>
-      </div>
 
-      <!-- 第二段：左文右图 -->
-      <div class="journey-item reverse">
-        <div class="journey-image">
-          <img src="images/feng1.png" alt="成长">
+    <div class="journey-section">
+      <div class="container">
+        <div class="journey-item reverse">
+          <div class="journey-image">
+            <img src="images/feng4.jpg" alt="成长" />
+          </div>
+          <div class="journey-content">
+            <h3 class="journey-title">开始写博客</h3>
+            <p class="journey-text">
+              4月中旬，我创建了一个博客账号，开始写博客，收获100+粉丝，阅读量达到2.08w,
+              5月份因为琐事就没在继续写了。
+            </p>
+          </div>
         </div>
-        <div class="journey-content">
-          <h3 class="journey-title">运营网站</h3>
-          <p class="journey-text">
-           9月底开始做虎哥解析网，我自己本身就是一个爱追剧的人，平常一些好的电影啥的，都会看看，所幸自己就做了一个。10月初，开始做运营，所幸拿这个网站试试，
-           看看效果，就当做自己工作之外的探索。
-          </p>
-        </div>
-      </div>
 
-      <!-- 第三段：左图右文 -->
-      <div class="journey-item">
-        <div class="journey-image">
-          <img src="images/feng2.png" alt="未来">
+        <div class="journey-item">
+          <div class="journey-image">
+            <img src="images/feng6.jpg" alt="起点" />
+          </div>
+          <div class="journey-content">
+            <h3 class="journey-title">起名zero</h3>
+            <p class="journey-text">
+              6月，我给自己起名Zero，最开始起名给公众号，万事开头难,数学上一切函数图像都从原点出发，
+              计算机的二进制以0和1构建整个数字世界，为此起名Zero，象征着从零开始的勇气和决心。
+            </p>
+          </div>
         </div>
-        <div class="journey-content">
-          <h3 class="journey-title">等待机会，不如自己去抓</h3>
-          <p class="journey-text">
-            10月初，忙完主要事情之外，开始做第二个项目，独立卡片，起因是因为一款同类的产品的爆火，让我觉得小众产品也有很大的受众群体，
-            所幸在同类产品的基础上加入了自己的理解，2天后产品上线。考虑成本等因素，就选在edge扩展市场上线（做这个的之前也做过翻译的插件）
-          </p>
+
+        <div class="journey-item reverse">
+          <div class="journey-image">
+            <img src="images/feng1.png" alt="成长" />
+          </div>
+          <div class="journey-content">
+            <h3 class="journey-title">运营网站</h3>
+            <p class="journey-text">
+              9月底开始做虎哥解析网，我自己本身就是一个热爱电影动漫的人，平常一些好的电影啥的，都会看看，所幸自己就做了一个。10月初，开始做运营，顺便拿这个网站试试，
+              看看效果，就当做自己工作之外的探索。
+            </p>
+          </div>
         </div>
-      </div><!-- 第二段：左文右图 -->
-      <div class="journey-item reverse">
-        <div class="journey-image">
-          <img src="images/feng3.png" alt="成长">
+
+        <div class="journey-item">
+          <div class="journey-image">
+            <img src="images/feng2.png" alt="未来" />
+          </div>
+          <div class="journey-content">
+            <h3 class="journey-title">等着机会来，不如主动去抓</h3>
+            <p class="journey-text">
+              10月初，忙完主要事情之外，开始做第二个项目，独立卡片，起因是因为一款同类的产品的爆火，让我觉得小众产品也有很大的受众群体，
+              所幸在同类产品的基础上加入了自己的理解，2天后产品上线。考虑成本等因素，就选在edge扩展市场上线（做这个的之前也做过翻译的插件）
+            </p>
+          </div>
         </div>
-        <div class="journey-content">
-          <h3 class="journey-title">机遇来到，开启知识付费</h3>
-          <p class="journey-text">
-          11月底，看到字节公司的产品经理在招创作者，我加入了其中，开始写文章来沉淀自己，那段时间也在研究AI技术，所幸把我的经验写下来。于是，越写越多，随后审核通过后，就上线了。虽然浏览量不错，收益却惨不忍睹，但还是收到了两个用户的认可，非常感谢
-          </p>
+
+        <div class="journey-item reverse">
+          <div class="journey-image">
+            <img src="images/feng3.png" alt="成长" />
+          </div>
+          <div class="journey-content">
+            <h3 class="journey-title">机遇来到，开启新的尝试</h3>
+            <p class="journey-text">
+              11月底，看到字节公司的产品经理在招创作者，我加入了其中，开始写文章来沉淀自己，那段时间也在研究AI技术，所幸把我的经验写下来。于是，越写越多，随后审核通过后，就上线了。虽然浏览量不错，收益却惨不忍睹，但还是收到了两个用户的认可，非常感谢
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <div class="stats-section">
       <div class="stats-title">
         <h2 class="display-6 mb-4">在这一年里</h2>
@@ -325,76 +259,43 @@
           </div>
         </div>
       </div>
+      <!-- 我看了多少电影 -->
       <div class="stats-title">
         <div class="d-flex justify-content-center align-items-center">
-          <span class="fs-4 ms-3">我看了 &nbsp;</span><span class="stats-number">16</span>
+          <span class="fs-4 ms-3">我看了 &nbsp;</span><span class="stats-number">24</span>
           <span class="fs-4 ms-3">部电影</span>
         </div>
         <div class="books-container">
           <div class="books-track">
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍1" />
+              <img src="images/film2.jpg" alt="书籍2" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍2" />
+              <img src="images/film3.jpg" alt="书籍3" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍3" />
+              <img src="images/film4.jpg" alt="书籍4" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍4" />
+              <img src="images/film5.jpg" alt="书籍5" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍5" />
+              <img src="images/film6.png" alt="书籍6" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍6" />
+              <img src="images/film7.jpg" alt="书籍7" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍7" />
+              <img src="images/film8.jpg" alt="书籍7" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍8" />
+              <img src="images/film9.jpg" alt="书籍7" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍9" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="stats-title">
-        <div class="d-flex justify-content-center align-items-center">
-          <span class="fs-4 ms-3">我听了了 &nbsp;</span><span class="stats-number">290</span>
-          <span class="fs-4 ms-3">首歌</span>
-        </div>
-        <div class="books-container">
-          <div class="books-track">
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍1" />
+              <img src="images/film10.jpg" alt="书籍7" />
             </div>
             <div class="book-item">
-              <img src="images/video1.webp" alt="书籍2" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍3" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍4" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍5" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍6" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍7" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍8" />
-            </div>
-            <div class="book-item">
-              <img src="images/video1.webp" alt="书籍9" />
+              <img src="images/film11.jpg" alt="书籍7" />
             </div>
           </div>
         </div>
@@ -407,7 +308,7 @@
       <p id=""></p>
     </div>
     <div class="rocket" id="backToTop">
-      <img src="images/huojian.svg" alt="返回顶部" />
+      <img src="images/huojian.svg" />
     </div>
 
     <script src="bootstrap.bundle.min.js"></script>
@@ -427,10 +328,51 @@
 
         tracks.forEach((track) => {
           const items = track.querySelectorAll(".book-item");
-          const clonedItems = Array.from(items).map((item) => item.cloneNode(true));
+
+          const itemsToClone = Math.min(items.length, 11);
+          const clonedItems = Array.from(items)
+            .slice(0, itemsToClone)
+            .map((item) => item.cloneNode(true));
+
           clonedItems.forEach((item) => track.appendChild(item));
+
+          let currentIndex = 0;
+          const moveStep = 1;
+          const transitionTime = 500;
+
+          function moveNext() {
+            currentIndex += moveStep;
+            track.style.transition = `transform ${transitionTime}ms linear`;
+            track.style.transform = `translateX(-${currentIndex * items[0].offsetWidth}px)`;
+
+            if (currentIndex >= items.length) {
+              setTimeout(() => {
+                track.style.transition = "none";
+                currentIndex = 0;
+                track.style.transform = "translateX(0)";
+              }, transitionTime);
+            }
+          }
+
+          let isHovered = false;
+          track.addEventListener("mouseenter", () => (isHovered = true));
+          track.addEventListener("mouseleave", () => (isHovered = false));
+
+          setInterval(() => {
+            if (!isHovered) {
+              moveNext();
+            }
+          }, 2000);
         });
       });
+      const style = document.createElement("style");
+      style.textContent = `
+        .books-track {
+          display: flex;
+          transition: transform 0.5s linear;
+        }
+      `;
+      document.head.appendChild(style);
 
       document.addEventListener("DOMContentLoaded", function () {
         const rocket = document.getElementById("backToTop");
@@ -439,8 +381,7 @@
 
         window.addEventListener("scroll", function () {
           const firstScreenRect = firstScreen.getBoundingClientRect();
-          
-          // 当第一屏完全离开视口时显示火箭图标
+
           if (firstScreenRect.bottom <= 0) {
             rocket.classList.add("visible");
           } else {
@@ -488,7 +429,5 @@
         });
       });
     </script>
-
-  
   </body>
 </html>
