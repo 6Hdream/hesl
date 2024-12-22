@@ -180,36 +180,6 @@ body {
   visibility: visible;
 }
 
-.music-control {
-  margin-right: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  color: #919191;
-  font-size: 1.8rem;
-  transition: color 0.3s ease;
-}
-
-.music-control:hover {
-  color: #3b82f6;
-}
-
-.music-control i {
-  margin-right: 8px;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.music-control.playing i {
-  animation: rotate 3s linear infinite;
-}
 .avter:hover {
   cursor: pointer;
 }
