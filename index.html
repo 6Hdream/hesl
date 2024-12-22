@@ -51,7 +51,7 @@
               /></a>
             </div>
             <div class="card-body text-center">
-              <h3 class="card-title fs-4 fw-bold">虎哥解析网</h3>
+              <h3 class="card-title fs-5">虎哥解析网</h3>
               <p class="card-text">获得了300+ 的用户和收藏</p>
             </div>
           </div>
@@ -66,7 +66,7 @@
               /></a>
             </div>
             <div class="card-body text-center">
-              <h3 class="card-title fs-4 fw-bold">记录卡片</h3>
+              <h3 class="card-title fs-5">记录卡片</h3>
               <p class="card-text">模仿同类产品做的，获得了80+安装量</p>
             </div>
           </div>
@@ -78,8 +78,8 @@
               <img src="images/feng3.png" alt="付费文章" class="img-fluid imgd" />
             </div>
             <div class="card-body text-center">
-              <h3 class="card-title fs-4 fw-bold">付费文章</h3>
-              <p class="card-text">收获2个用户的付费认可</p>
+              <h3 class="card-title fs-5">付费文章（1w+）</h3>
+              <p class="card-text">收获2个付费用户认可</p>
             </div>
           </div>
         </div>
@@ -225,7 +225,8 @@
 
     <div class="footer">
       <p class="mb-1">Prower By zero</p>
-      <p class="mb-0">更新于2024年12月底</p>
+      <p class="mb-0" id="uptime"></p>
+      <p id=""></p>
     </div>
 
     <div class="rocket" id="backToTop">
@@ -234,6 +235,16 @@
 
     <script src="bootstrap.bundle.min.js"></script>
     <script>
+      function displayUptime() {
+        var launchDate = new Date("2024-12-21T00:00:00");
+        var currentDate = new Date();
+        var diffTime = Math.abs(currentDate - launchDate);
+        var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        document.getElementById("uptime").innerHTML = "本网站已运行 " + diffDays + " 天";
+      }
+
+      window.onload = displayUptime;
       document.addEventListener("DOMContentLoaded", function () {
         const tracks = document.querySelectorAll(".books-track");
 

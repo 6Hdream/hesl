@@ -126,7 +126,7 @@ body {
 /* 底部样式 */
 .footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 10px;
   color: #919191;
 }
 
