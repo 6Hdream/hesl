@@ -1,13 +1,4 @@
-function displayUptime() {
-  var launchDate = new Date("2024-12-21T00:00:00");
-  var currentDate = new Date();
-  var diffTime = Math.abs(currentDate - launchDate);
-  var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  document.getElementById("uptime").innerHTML = "本站已运行 &nbsp;" + diffDays + " &nbsp;天";
-}
-
-window.onload = displayUptime;
 document.addEventListener("DOMContentLoaded", function () {
   const tracks = document.querySelectorAll(".books-track");
 
