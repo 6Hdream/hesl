@@ -303,10 +303,6 @@
       <p class="mb-1">网络安全、前端工程师、产品运营、AI技术研究者</p>
       <p class="mb-4" id="uptime"></p>
     </div>
-    <div class="rocket" id="backToTop">
-      <img src="images/huojian.svg" />
-    </div>
-    <script src="bootstrap.bundle.min.js"></script>
     <script>
       function displayUptime() {
         var launchDate = new Date("2024-12-21T00:00:00");
@@ -316,9 +312,13 @@
 
         document.getElementById("uptime").innerHTML = "本站已运行 &nbsp;" + diffDays + " &nbsp;天";
       }
-
       window.onload = displayUptime;
-
+    </script>
+    <div class="rocket" id="backToTop">
+      <img src="images/huojian.svg" />
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         const tracks = document.querySelectorAll(".books-track");
 
